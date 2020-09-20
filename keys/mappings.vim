@@ -1,3 +1,15 @@
+" Retype last word
+	inoremap ,x <Esc>bce
+
+" Replace all is aliased to S.
+	nnoremap S :%s//g<Left><Left>
+
+" Compile document, be it groff/LaTeX/markdown/etc.
+	map ,c :w! \| !compiler <c-r>%<CR>
+
+" Check file in shellcheck:
+	map ,s :!clear && shellcheck %<CR>
+
 " Basic Key Mappings
 
 imap <C-h> <C-w>h
@@ -71,10 +83,10 @@ else
   tnoremap <Esc> <C-\><C-n>
 
   " Use alt + hjkl to resize windows
-  nnoremap <silent> <M-j>    :resize -2<CR>
-  nnoremap <silent> <M-k>    :resize +2<CR>
-  nnoremap <silent> <M-h>    :vertical resize -2<CR>
-  nnoremap <silent> <M-l>    :vertical resize +2<CR>
+  nnoremap <silent> <C-M-j>    :resize -2<CR>
+  nnoremap <silent> <C-M-k>    :resize +2<CR>
+  nnoremap <silent> <C-M-h>    :vertical resize -2<CR>
+  nnoremap <silent> <C-M-l>    :vertical resize +2<CR>
 
 endif
 

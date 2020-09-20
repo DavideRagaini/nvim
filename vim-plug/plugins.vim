@@ -8,6 +8,9 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    Plug 'jreybert/vimagit'
+
+    Plug 'vimwiki/vimwiki'
     " Better Comments
     Plug 'tpope/vim-commentary'
     " Change dates fast
