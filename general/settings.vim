@@ -1,6 +1,5 @@
-
 set nocompatible
-set listchars=tab:→\ ,nbsp:␣,trail:•,precedes:«,extends:»,eol:¶ ",space:·
+set listchars=tab:→\ ,nbsp:␣,trail:•,precedes:«,extends:»,eol:¬ ",space:·eol:¶
 set list
 " set relativenumber
 let g:PathToSessions = "~/.config/nvim/sessions/"
