@@ -8,10 +8,13 @@
 	map ,c :w! \| !compiler <c-r>%<CR>
 
 " Check file in shellcheck:
-	map ,s :!clear && shellcheck %<CR>
+	" map ,s :!clear && shellcheck %<CR>
+
+" Navigating with guides
+	inoremap jf <Esc>/<++><Enter>"_c4l
+	vnoremap jf <Esc>/<++><Enter>"_c4l
 
 " Basic Key Mappings
-
 imap <C-h> <C-w>h
 imap <C-j> <C-w>j
 imap <C-k> <C-w>k
