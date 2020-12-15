@@ -3,6 +3,7 @@
 
 " Replace all is aliased to S.
 	nnoremap S :%s//g<Left><Left>
+	" nnoremap ,t :%s/á/à/g \| %s/é/è/g \| %s/í/ì/g \| %s/ó/ò/g \| %s/ú/ù/g \| %s/É/È/g
 
 " Compile document, be it groff/LaTeX/markdown/etc.
 	map ,c :w! \| !compiler <c-r>%<CR>
@@ -12,7 +13,10 @@
 
 " Navigating with guides
 	inoremap jf <Esc>/<++><Enter>"_c4l
-	vnoremap jf <Esc>/<++><Enter>"_c4l
+	vnoremap fj <Esc>/<++><Enter>"_c4l
+
+" Open corresponding .pdf/.html or preview
+	map ,p :!opout <c-r>%<CR><CR>
 
 " Basic Key Mappings
 imap <C-h> <C-w>h

@@ -3,6 +3,8 @@ set listchars=tab:→\ ,nbsp:␣,trail:•,precedes:«,extends:»,eol:¬ ",space
 set list
 " set relativenumber
 let g:PathToSessions = "~/.config/nvim/sessions/"
+let g:tex_flavor = 'latex'
+set background=dark
 
 set iskeyword+=-                      	" treat dash separated words as a word text object"
 set formatoptions-=cro                  " Stop newline continution of comments
