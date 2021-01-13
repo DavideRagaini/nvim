@@ -3,12 +3,9 @@
 " Runs a script that cleans out tex build files whenever I close out of a .tex file.
 autocmd VimLeave *.tex !texclear %
 
-" Correct accents
-autocmd VimLeave *.tex !acuto %
-
 " Turn spellcheck on for markdown files:
 augroup auto_spellcheck
-  autocmd BufNewFile,BufRead *.md,*.tex setlocal spell
+  autocmd BufNewFile,BufRead *.tex setlocal spell
 augroup END
 
 " Set default language
