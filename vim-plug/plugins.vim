@@ -9,6 +9,7 @@ endif
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'jreybert/vimagit'
+    Plug 'dracula/vim', { 'as': 'dracula' }
 
     Plug 'vimwiki/vimwiki'
     " Better Comments

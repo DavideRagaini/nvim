@@ -2,8 +2,11 @@ set nocompatible
 set listchars=tab:→\ ,nbsp:␣,trail:•,precedes:«,extends:»,eol:¬ ",space:·eol:¶
 set list
 " set relativenumber
+set relativenumber
+set scrolloff=10
 let g:PathToSessions = "~/.config/nvim/sessions/"
 let g:tex_flavor = 'latex'
+colorscheme dracula
 set background=dark
 
 set iskeyword+=-                      	" treat dash separated words as a word text object"

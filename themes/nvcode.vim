@@ -5,6 +5,7 @@ let g:nvcode_termcolors=256
 
 syntax on
 colorscheme nvcode
+" colorscheme nvcode
 
 
 " checks if your terminal has 24-bit color support
