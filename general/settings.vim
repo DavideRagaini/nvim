@@ -1,13 +1,20 @@
 set nocompatible
 set listchars=tab:→\ ,nbsp:␣,trail:•,precedes:«,extends:»,eol:¬ ",space:·eol:¶
 set list
-" set relativenumber
 set relativenumber
 set scrolloff=10
 let g:PathToSessions = "~/.config/nvim/sessions/"
 let g:tex_flavor = 'latex'
 colorscheme dracula
+" colorscheme spacecamp_lite
 set background=dark
+
+if has('persistent_undo')                   "check if your vim version supports
+  set undodir=$HOME/.cache/nvim/undodir     "directory where the undo files will be stored
+  set undofile                              "turn on the feature
+  set undolevels=1000                       " How many undos
+  set undoreload=10000
+endif
 
 set iskeyword+=-                      	" treat dash separated words as a word text object"
 set formatoptions-=cro                  " Stop newline continution of comments
